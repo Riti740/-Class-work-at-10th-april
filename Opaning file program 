@@ -1,0 +1,67 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Riti740/-Class-work-at-10th-april/blob/main/Opaning%20file%20program%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# program for writing data into the file\n",
+        "\n",
+        "# opening file for write operation\n",
+        "filev = open(\"firstfile.txt\", \"w\")\n",
+        "\n",
+        "# printing five sentences into the file\n",
+        "print(\"Enter any five sentences:\")\n",
+        "\n",
+        "for x in range(5):\n",
+        "    # input of data from user\n",
+        "        sentence = input()\n",
+        "\n",
+        "                # writing sentence into the file\n",
+        "                    filev.write(sentence + \"\\n\")\n",
+        "\n",
+        "                    print(\"Data successfully written\")\n",
+        "\n",
+        "                    # closing the file\n",
+        "                    filev.close()"
+      ],
+      "metadata": {
+        "id": "UCQobxC7taKW"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "2dIvmEwntaTW"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
