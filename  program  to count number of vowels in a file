@@ -1,0 +1,62 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Riti740/-Class-work-at-10th-april/blob/main/%20program%20%20to%20count%20number%20of%20vowels%20in%20a%20file\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# to open file for read operation\n",
+        "filev = open(\"firstfile.txt\", \"r\")\n",
+        "\n",
+        "# to check file is open or not\n",
+        "if(filev):\n",
+        "\n",
+        "    # to read data from file\n",
+        "    data = filev.read()\n",
+        "    print(data)\n",
+        "\n",
+        "    print(\"----------------------\")\n",
+        "\n",
+        "    # count vowels\n",
+        "    count = 0\n",
+        "    for ch in data:\n",
+        "        if ch.lower() in ['a', 'e', 'i', 'o', 'u']:\n",
+        "            count += 1\n",
+        "\n",
+        "    print(\"No. of vowels :\", count)\n",
+        "\n",
+        "    # closing file\n",
+        "    filev.close()\n",
+        "\n",
+        "else:\n",
+        "    print(\"Unable to open the file\")"
+      ],
+      "metadata": {
+        "id": "I9t9qOs54wE0"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colab",
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
