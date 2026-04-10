@@ -1,0 +1,55 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Riti740/-Class-work-at-10th-april/blob/main/Program%20for%20writing%20data%20into%20the%20file%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# program for writing data into the file\n",
+        "\n",
+        "# opening file for write operation\n",
+        "filev = open(\"file.txt\", \"w\")\n",
+        "\n",
+        "# writing twenty sentences into the file\n",
+        "print(\"Enter any twenty sentences:\")\n",
+        "\n",
+        "for x in range(20):\n",
+        "    sentence = input()\n",
+        "        filev.write(sentence + \"\\n\")   # new line add kiya\n",
+        "\n",
+        "        print(\"Data successfully written\")\n",
+        "\n",
+        "        # closing the file\n",
+        "        filev.close()"
+      ],
+      "metadata": {
+        "id": "radc0EdZxDwp"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
